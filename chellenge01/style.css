@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+}
+
+
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    background-image: url(./imgs/background-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover;
+    width: 85%;
+    height: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1440px;
+}
+
+
+.container {
+    width: 100%;
+    max-width: 1440px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.card {
+    background-color: hsl(0, 0%, 100%);
+    padding: 20px;
+    max-width: 550px;
+    box-shadow: 0 0 7px hsl(292, 42%, 14%);
+    border: none;
+    border-radius: 16px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.title h1 {
+    font-size: 55px;
+    font-weight: 700;
+    line-height: 60px;
+    margin-bottom: 20px;
+
+}
+
+.what {
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+}
+
+.shows,
+.shows01,
+.shows1,
+.shows2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid hsla(300, 2%, 41%, 0.452);
+    padding: 20px 0px;
+}
+
+.cardTitle {
+    font-size: 18px;
+    font-weight: 600;
+    color: hsl(292, 42%, 14%);
+}
+
+.cardTitle:hover {
+    color: #AD28EB;
+}
+
+button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+}
+
+.minus,
+.minus01,
+.minus1,
+.minus2 {
+    display: none;
+}
+
+.minus02 {
+    display: none;
+}
+
+.popover,
+.popover01,
+.popover1,
+.popover2 {
+    overflow: hidden;
+    height: 0px;
+}
+
+.popover span,
+.popover01 span,
+.popover1 span,
+.popover2 span {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 16px;
+    color: hsl(293, 25%, 40%);
+}
+
+@media screen and (max-width: 760px) {
+    .title h1 {
+        font-size: 50px;
+        font-weight: 700;
+        line-height: 50px;
+        margin-bottom: 20px;
+
+    }
+
+    .cardTitle {
+        font-size: 17px;
+    }
+}
